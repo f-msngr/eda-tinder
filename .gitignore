@@ -1,0 +1,25 @@
+# Environment variables
+*.env
+!.env.example
+
+# Virtual environment
+.venv*
+
+# Fichiers Python compilés
+__pycache__/
+*.pyc
+
+# Fichiers Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+notebooks/01-Speed_Dating.ipynb
+
+# Fichiers de log
+*.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Presentation projet
+Prez.md
