@@ -1,123 +1,159 @@
-![Tinder](assets/img/Tinder-Symbole.png)
+<img src="assets/img/Tinder-Symbole.png" alt="Tinder Logo" width="300"/>
 
-# Speed Dating with Tinder
+> **Exploratory data analysis uncovering behavioral patterns in speed dating decisions.**  
+> Statistical analysis and visualization of 8,000+ speed dating interactions to identify key factors influencing mutual attraction and second-date decisions.
 
-## Company's description 📇
+---
 
-<a href="https://tinder.com/" target="_blank">Tinder</a> is an online dating and geosocial networking application. In Tinder, users "swipe right" to like or "swipe left" to dislike other users' profiles, which include their photos, a short bio, and a list of their interests.
+## 📋 Table of Contents
 
-Tinder was launched by Sean Rad at a hackathon held at the Hatch Labs incubator in West Hollywood in 2012.
+- [📋 Table of Contents](#-table-of-contents)
+- [🎯 About](#-about)
+- [🎯 Project Goals](#-project-goals)
+- [⚙️ Tech Stack](#️-tech-stack)
+- [✨ Key Features](#-key-features)
+  - [**Data Preparation \& Exploration**](#data-preparation--exploration)
+  - [**Behavioral Analysis**](#behavioral-analysis)
+- [📊 Key Insights](#-key-insights)
+- [📓 Notebooks](#-notebooks)
+- [🚀 Quick Start](#-quick-start)
+- [📜 License](#-license)
+- [🎓 Portfolio Context](#-portfolio-context)
 
-As of 2021, Tinder has recorded more than 65 billion matches worldwide.
+---
 
-[⬆ Table of Contents](#table-of-contents)
+## 🎯 About
 
-## Project 🚧
+Tinder's marketing team is experiencing a decrease in matches and needs to understand **what makes people interested in each other** for second dates.
 
-The marketing team needs help on a new project. They are experiencing a decrease in the number of matches, and they are trying to find a way to understand **what makes people interested into each other**. 
+This project analyzes data from experimental speed dating events (2002-2004) where participants had 4-minute dates and rated each other on six attributes: Attractiveness, Sincerity, Intelligence, Fun, Ambition, and Shared Interests. The dataset includes demographics, dating habits, self-perception, and lifestyle information.
 
-They decided to run a speed dating experiment with people who had to give Tinder lots of informations about themselves that could ultimately reflect on ther dating profile on the app.
+[⬆ Back to top](#-table-of-contents)
 
-Tinder then gathered the data from this experiment. Each row in the dataset represents one speed date between two people, and indicates wether each of them secretly agreed to go on a second date with the other person.
+---
 
-[⬆ Table of Contents](#table-of-contents)
+## 🎯 Project Goals
 
-## Goals 🎯
+1. **Identify decision drivers**: What attributes most influence positive second-date decisions?
+2. **Demographic patterns**: How do age, gender, and background affect dating preferences?
+3. **Self-perception vs reality**: Compare participants' self-ratings with how they're perceived by dates
+4. **Behavioral insights**: Discover actionable patterns to improve Tinder's matching algorithm
 
-Use the dataset to understand what makes people interested into each other to go on a second date together:
-* You may use descriptive statistics
-* You may use visualisations
+[⬆ Back to top](#-table-of-contents)
 
-## Scope of this project 🖼️
+---
 
-Data was gathered from participants in experimental speed dating events from 2002-2004. During the events, the attendees would have a four minute "first date" with every other participant of the opposite sex. At the end of their four minutes, participants were asked if they would like to see their date again. They were also asked to rate their date on six attributes: Attractiveness, Sincerity, Intelligence, Fun, Ambition, and Shared Interests.
+## ⚙️ Tech Stack
 
-The dataset also includes questionnaire data gathered from participants at different points in the process. These fields include: demographics, dating habits, self-perception across key attributes, beliefs on what others find valuable in a mate, and lifestyle information. See the Speed Dating Data Key document below for details.
-
-[Dataset](data/Speed+Dating+Data.csv)
-
-[Dataset Description](data/Speed+Dating+Data+Key.doc)
-
-# Table of Contents
-
-- [Speed Dating with Tinder](#speed-dating-with-tinder)
-  - [Company's description 📇](#companys-description-)
-  - [Project 🚧](#project-)
-  - [Goals 🎯](#goals-)
-  - [Scope of this project 🖼️](#scope-of-this-project-️)
-- [Table of Contents](#table-of-contents)
-  - [Tech Stack ⚙️](#tech-stack-️)
-  - [Key Features ✨](#key-features-)
-- [Installation](#installation)
-  - [Requirements ☑](#requirements-)
-  - [Quick install 🔧](#quick-install-)
-- [License 📜](#license-)
-
-
-## Tech Stack ⚙️
-
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Jupyter](https://img.shields.io/badge/Jupyter-Notebooks-orange)]()
-![pandas](https://img.shields.io/badge/pandas-2.x-150458?logo=pandas&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg?logo=python&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebooks-F37626?logo=jupyter&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-2.x-150458?logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-1.26-013243?logo=numpy&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-3.8-11557C?logo=matplotlib&logoColor=white)
-![Seaborn](https://img.shields.io/badge/Seaborn-0.12-4C9A2A?logo=seaborn&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-0.12-4C9A2A?logoColor=white)
 ![Plotly](https://img.shields.io/badge/Plotly-5.x-3F4F75?logo=plotly&logoColor=white)
 
-## Key Features ✨
+[⬆ Back to top](#-table-of-contents)
 
-- **Data Cleaning** : Handled missing values and removed irrelevant columns.  
-- **Feature Engineering** : Created demographic, attractiveness, and shared interest features.  
-- **Exploratory Analysis** : Visualized distributions, correlations, and decision patterns.  
-- **Behavior Insights** : Identified key factors influencing positive responses.  
-- **Model Prep** : Structured dataset for predictive modeling and further analysis.
+---
 
+## ✨ Key Features
 
-[⬆ Back to top](#table-of-contents)
+### **Data Preparation & Exploration**
+Comprehensive missing value analysis, irrelevant column removal, and data quality validation. Distribution analysis across demographic groups and correlation heatmaps for attribute ratings.
 
-# Installation
+### **Behavioral Analysis**
+- Gender-based preference patterns (rating criteria differences)
+- Self-perception bias quantification (self-rating vs partner-rating gaps)
+- Mutual match rate analysis and decision symmetry patterns
 
-## Requirements ☑
+[⬆ Back to top](#-table-of-contents)
 
-- python3
-- pip
-- Virtual environment (`venv` recommended)
+---
 
-[⬆ Back to top](#table-of-contents)
+## 📊 Key Insights
 
-## Quick install 🔧
+**Dataset:** 8,378 speed dating interactions from 551 participants (2002-2004)
 
+1. **Least desirable attributes**: Shared interests (women), ambition (men)
+2. **Attractiveness** (varies by gender) has less weight than presumed in final decision
+3. **Shared interests more important than ethnic origin** are a predominant criterion beyond a certain number of interests. Hypothesis: they are descriptors of values and lifestyle
+4. **Optimistic initial self-perception** - participants estimate that others perceive them as they perceive themselves
+5. **Importance of meeting order**. More positive responses at the beginning and end
+6. **Difference in selectivity by professional categories** depending on gender
+
+[⬆ Back to top](#-table-of-contents)
+
+---
+
+## 📓 Notebooks
+
+**[eda.ipynb](notebooks/eda.ipynb)** - Complete Exploratory Data Analysis
+- Missing value handling and cleaning
+- Demographic distribution analysis
+- Attribute correlation analysis
+- Decision pattern visualization
+- Gender comparison and bias detection
+- Mutual match rate analysis
+- Key insights
+
+[⬆ Back to top](#-table-of-contents)
+
+---
+
+## 🚀 Quick Start
+
+**Prerequisites:**
+- Python ≥ 3.8
+- `pip` and virtual environment (`venv` recommended)
+
+**Installation:**
 ```bash
-# 1. Clone the repository
+# 1. Clone repository
 git clone https://github.com/fabthenabab/eda-tinder.git
 cd eda-tinder
 
-# 2. Create and activate a virtual environment
+# 2. Create and activate virtual environment
 python3 -m venv .venv-tinder
-source .venv-tinder/bin/activate   # Linux/macOS
+source .venv-tinder/bin/activate
 
-# 3. Upgrade pip
+# 3. Install dependencies
 pip install --upgrade pip
-
-# 4. Install dependencies
 pip install --no-cache-dir -r requirements.txt
 
-# 5. Install Jupyter environment (for running notebooks in VSCode for example)
-Install Jupyter environment
-pip install ipykernel
-# Open notebook in VSCode for example
-code eda.ipynb
+# 4. Install Jupyter
+pip install jupyterlab ipykernel
 
-# 6. Optional: Launch Jupyter Lab if you want to run the notebooks in a browser
-pip install jupyterlab
-# Open notebook eda.ipynb in jupyterlab
+# 5. Launch notebook
 jupyter lab
+# Open eda.ipynb
 ```
 
-[⬆ Back to top](#table-of-contents)
+[⬆ Back to top](#-table-of-contents)
 
-# License 📜
+---
 
-This project is licensed under the GPL3 License — see the [LICENSE](./LICENSE) file for details.
+## 📜 License
 
-[⬆ Back to top](#table-of-contents)
+This project is licensed under the GPL-3.0 License — see the [LICENSE](./LICENSE) file for details.
+
+[⬆ Back to top](#-table-of-contents)
+
+---
+
+## 🎓 Portfolio Context
+
+**Project Type:** Exploratory Data Analysis (EDA) - Behavioral Statistics  
+**Focus:** Insight discovery and data storytelling over modeling
+
+**Demonstrates:**
+- **Data cleaning methodology** (missing value strategies, feature selection)
+- **Visualization techniques** (Matplotlib, Seaborn, Plotly)
+- **Correlation analysis** across categorical and continuous variables
+- **Statistical analysis** of human behavioral patterns (8,378 interactions)
+- **Business insight generation** from experimental data
+
+📚 **Part of [Fab's Data Science Portfolio](https://github.com/fabthenabab)** — 
+7 projects covering the full ML lifecycle from research to production.
+
+[⬆ Back to top](#-table-of-contents)
