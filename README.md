@@ -19,6 +19,7 @@
 - [🚀 Quick Start](#-quick-start)
 - [📜 License](#-license)
 - [🎓 Portfolio Context](#-portfolio-context)
+- [Author](#author)
 
 ---
 
@@ -153,7 +154,9 @@ This project is licensed under the GPL-3.0 License — see the [LICENSE](./LICEN
 - **Statistical analysis** of human behavioral patterns (8,378 interactions)
 - **Business insight generation** from experimental data
 
-📚 **Part of [Fab's Data Science Portfolio](https://github.com/fabthenabab)** — 
-7 projects covering the full ML lifecycle from research to production.
+## Author
+
+**Fabien Messinger** — Data Engineer, certified AI Architect (RNCP7, Jedha)
+[GitHub](https://github.com/f-msngr) · [LinkedIn](https://www.linkedin.com/in/fabien-messinger)
 
 [⬆ Back to top](#-table-of-contents)
