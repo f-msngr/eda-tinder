@@ -111,7 +111,7 @@ Comprehensive missing value analysis, irrelevant column removal, and data qualit
 **Installation:**
 ```bash
 # 1. Clone repository
-git clone https://github.com/fabthenabab/eda-tinder.git
+git clone https://github.com/f-msngr/eda-tinder.git
 cd eda-tinder
 
 # 2. Create and activate virtual environment
